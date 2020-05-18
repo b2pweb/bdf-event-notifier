@@ -1,0 +1,33 @@
+{
+  "name": "b2pweb/bdf-event-notifier",
+  "description": "Bdf event notifier component",
+  "type": "library",
+  "keywords": ["event", "bus message"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sébastien Tanneux"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bdf\\Event\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0|~8.0"
+  },
+  "scripts": {
+    "tests": "phpunit",
+    "tests-with-coverage": "phpunit --coverage-clover coverage.xml"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
